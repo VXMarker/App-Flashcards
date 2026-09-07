@@ -1,34 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis FlashCards</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>📚 Mis FlashCards</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis FlashCards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 Geo fea</h1>
 
-    <!-- Formulario para crear tarjetas -->
-    <form id="card-form" class="card-form">
-      <h2>Crear nueva tarjeta</h2>
-      <input type="text" id="question" placeholder="Escribe la pregunta..." required>
-      <textarea id="answer" placeholder="Escribe la respuesta..." required></textarea>
-      <button type="submit">➕ Agregar tarjeta</button>
-    </form>
+      <!-- Formulario para crear tarjetas -->
+      <form id="card-form" class="card-form">
+        <h2>Crear nueva tarjeta</h2>
+        <input
+          type="text"
+          id="question"
+          placeholder="Escribe la pregunta..."
+          required
+        />
+        <textarea
+          id="answer"
+          placeholder="Escribe la respuesta..."
+          required
+        ></textarea>
+        <button type="submit">➕ Agregar tarjeta</button>
+      </form>
 
-    <!-- Buscador -->
-    <input type="text" id="search" class="search" placeholder="🔍 Buscar tarjetas...">
+      <!-- Buscador -->
+      <input
+        type="text"
+        id="search"
+        class="search"
+        placeholder="🔍 Buscar tarjetas..."
+      />
 
-    <!-- Contenedor de tarjetas -->
-    <div id="cards-container" class="cards-container"></div>
+      <!-- Contenedor de tarjetas -->
+      <div id="cards-container" class="cards-container"></div>
 
-    <p id="empty-message" class="empty-message hidden">
-      No hay tarjetas todavía. ¡Crea tu primera flashcard! 🎉
-    </p>
-  </div>
+      <p id="empty-message" class="empty-message hidden">
+        No hay tarjetas todavía. ¡Crea tu primera flashcard! 🎉
+      </p>
+    </div>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
